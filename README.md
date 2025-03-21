@@ -12,7 +12,7 @@
 7 - ✅ Activation Secret Scanning
 8 - ✅ Activation Dependabot
 9 - ✅ Sur la branche develop en local, mettre en place les régles d'exécution des branches, puis pousser sur le dépôt GitHub
-10 - Pull Request develop vers recette, synchro branche locale recette
+10 - ✅ Pull Request develop vers recette, synchro branche locale recette
 11 - Pull Request recette vers main, synchro branche locale main
 12 - Activation CodeQL (et si besoin, reprendre les workflows supprimés plus tôt dans la branche locale develop)
 13 - Création d'un job de vérification joué en premier dans le pipeline, et dont CodeQL aura besoin pour se lancer
