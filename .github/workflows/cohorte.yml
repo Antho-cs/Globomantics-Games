@@ -1,0 +1,22 @@
+name: COHORTE Devops
+
+on:
+  push:
+    branches:
+      - develop  # Au Push sur Develop
+  pull_request: # Lors des pull request des branches rec et main
+    branches:
+      - recette
+      - main
+  workflow_dispatch: {} # Permet l'éxecution manuel (web)
+
+jobs:
+  build-develop: 
+    if: github.ref == 'refs/heads/develop'
+
+  deploy-recette:
+    if: github.ref == 'refs/heads/recette'
+    
+  deploy-main:
+    if: github.ref == 'refs/heads/main'
+    
